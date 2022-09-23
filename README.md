@@ -193,9 +193,14 @@ Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna be
 Pada soal ini kami diperintahkan untuk menelusuri percakapan tersembunyi antar-mahasiswa yang sedang membicarakan kunci jawaban.
 
 ## Pengerjaan Soal
-Pada percakapan ini kami menemukan peserta menanyakan clue untuk mendapatkan jawaban soal shift dari kode mencurigakan dan bagaimana cara memecahkan kodenya. Kami menelusurinya dengan metode syntax tcp.stream eq 29 dan follow dari setiap paket yang ada dan menemukan beberapa percakapan dalam screenshot berikut:
+Pada percakapan ini kami menemukan peserta menanyakan clue untuk mendapatkan jawaban soal shift dari kode mencurigakan dan bagaimana cara memecahkan kodenya. Kami menelusurinya dengan metode syntax `tcp.stream eq [angka]` dan follow dari setiap paket yang ada dan menemukan beberapa percakapan dalam screenshot berikut:
 
-— Gambar Soal no 8 di sini —
+## Kendala
+Tidak ada, hanya perlu waktu saja.
+
+## Dokumentasi Soal 8
+- Hasil pencarian paket soal no 8 <br>
+![Hasil pencarian paket soal no 8](images/8.png)
 
 # Soal 9
 Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.
@@ -205,31 +210,54 @@ Pada soal ini kami diperintahkan mencari file yang mencurigakan yang dikirim. Se
 
 ## Pengerjaan Soal
 Dengan petunjuk yang diberikan dalam percakapan dari soal sebelumnya (8) dapat
-diketahui port yang digunakan yakni port 9002. Maka dari itu kita akan menggunakan
-Display Filter tcp.dstport == 9002. Kami menemukan kode rahasia yang kemungkinan
+diketahui port yang digunakan yakni ``port 9002``. Maka dari itu kita akan menggunakan
+Display Filter `tcp.dstport == 9002`. Kami menemukan kode rahasia yang kemungkinan
 berisi jawaban saat kodenya di decrypt sesuai petunjuk pelaku.
 
-— Gambar Soal  9.1 disini —
-
-Kemudian hasil deskripsi ini diubah menjadi Raw dan didapatkan hasil string yang terenkripsi dengan OpenSSL dan DES3. Dari percakapan tadi juga dapat diketahui kata sandi atau password berupa lima karakter anime yang kembar 5. Ketika dilakukan penelusuran di Google didapatkan 5 nama karakter berupa Ichika, Nino, Miku, Yotsuba, dan Itsuki Nakano. Untuk mendekripsinya kami menggunakan fungsi terminal openssl enc -d -des3 -in encrypted.txt -out decrypted.txt dengan password Nakano dan mendapatkan hasil berikut:
-
-—- Gambar Soal 9.2 disini —
-—- Gambar Soal 9.3 disini —
+Kemudian hasil deskripsi ini diubah menjadi Raw dan didapatkan hasil string yang terenkripsi dengan OpenSSL dan DES3. Dari percakapan tadi juga dapat diketahui kata sandi atau password berupa lima karakter anime yang kembar 5. Ketika dilakukan penelusuran di Google didapatkan 5 nama karakter berupa Ichika, Nino, Miku, Yotsuba, dan Itsuki Nakano. Untuk mendekripsinya kami menggunakan fungsi terminal `openssl enc -d -des3 -in encrypted.txt -out decrypted.txt` dengan password `nakano` dan mendapatkan hasil berikut:
 
 ## Kendala
-Kami Salah syntax untuk mendekripsi hasil file des3nya
+Kami Salah syntax file sebelumnya untuk mendekripsi hasil file des3nya
 
-# Soal 10
+## Revisi
+Disini kami salah syntax untuk mendekrip filenya karena kami malah mensave file saltnya dengan format `.txt` bukan `.des3` sehingga terjadi error. Untuk syntaxnya yang benar menjadi `openssl enc -d -des3 -in ITA.des3 -out flag.txt` lalu masukkan keynya, yaitu nakano.
+
+## Dokumentasi Soal 9
+- Hasil penemuan isi file des3 dalam bentuk ASCII <br>
+![Hasil penemuan isi file des3 dalam bentuk ASCII](images/9-2.png)
+
+- Hasil penemuan isi file des3 dalam bentuk raw <br>
+![Hasil penemuan isi file des3 dalam bentuk raw](images/9-3.png)
+
+### Sebelum Revisi
+- Syntax dekripsi yang salah <br>
+![Hasil penemuan isi file des3 dalam bentuk raw](images/9-1.png)
+
+### Sesudah Revisi
+- Syntax dekripsi yang benar <br>
+![Syntax dekripsi yang benar](images/9-4.png)
+
+- Memasukkan keynya <br>
+![Memasukkan keynya](images/9-5.png)
+
+# Soal 10 (Revisi)
 Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
 
 ## Analisa Soal
 Kami harus menemukan flag pada dari output file des3 yang telah didekripsi sesuai petunjuk yang pelaku jelaskan.
 
 ## Pengerjaan Soal
-— Gambar soal 10 —
+Disini kami hanya menampilkan hasil dekripsi dari file des3 pada soal 9
 
 ## Kendala
 Kami terkendala waktu sehingga belum sempat menuntaskan soal.
+
+## Revisi
+Sebenarnya jika nomor 9 selesai maka otomatis nomor 10 selesai karena nomor 10 hanya merupakan hasil dari nomor 9.
+
+## Dokumentasi Soal 10
+- Hasil dekripsi file des3 <br>
+![Hasil dekripsi file des3](images/10.png)
 
 
 
