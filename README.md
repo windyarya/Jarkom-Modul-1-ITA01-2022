@@ -9,16 +9,16 @@ Penjelasan dan penyelesaian Soal Shift 2 Jaringan Komputer 2021 Kelompok ITA01
 # Daftar Isi
 
 * [Daftar Isi](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#daftar-isi)
-* [Soal 1](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-1)
-* [Soal 2](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-2)
-* [Soal 3](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-3)
-* [Soal 4](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-4)
-* [Soal 5](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-5)
-* [Soal 6](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-6)
-* [Soal 7](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-7)
-* [Soal 8](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-8)
-* [Soal 9](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-9)
-* [Soal 10](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/-/tree/main#soal-10)
+* [Soal 1](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-1)
+* [Soal 2](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-2)
+* [Soal 3](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/soal-3)
+* [Soal 4](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-4)
+* [Soal 5](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-5)
+* [Soal 6](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-6)
+* [Soal 7](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-7)
+* [Soal 8](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-8)
+* [Soal 9](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-9)
+* [Soal 10](https://github.com/windyarya/Jarkom-Modul-1-ITA01-2022/#soal-10)
 
 # Soal 1
 
