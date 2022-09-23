@@ -76,7 +76,7 @@ Tidak ada kendala yang dialami.
 
 ## Dokumentasi Soal 3
 - Hasil Filter soal 3 <br>
-![Hasil Filter soal 3](img/3.png)
+![Hasil Filter soal 3](images/3.png)
 
 # Soal 4
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ```port 21```.
@@ -97,7 +97,7 @@ Tidak ada kendala yang dialami.
 
 ## Dokumentasi Soal 4
 - Hasil Filter soal 4 <br>
-![Hasil Filter soal 4](img/4.png)
+![Hasil Filter soal 4](images/4.png)
 
 # Soal 5
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ```port 443```.
@@ -116,7 +116,7 @@ Tidak ada kendala yang dialami.
 
 ## Dokumentasi Soal 5
 - Hasil Filter soal 5 <br>
-![Hasil Filter soal 5](img/5.png)
+![Hasil Filter soal 5](images/5.png)
 
 # Soal 6
 Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
@@ -138,10 +138,10 @@ Tidak ada kendala yang dialami.
 
 ## Dokumentasi Soal 6
 - Hasil ping lipi.go.id <br>
-![Hasil ping lipi.go.id](img/6-1.png)
+![Hasil ping lipi.go.id](images/6-1.png)
 
 - Hasil Filter soal 6 <br>
-![Hasil Filter soal 6](img/6-2.png)
+![Hasil Filter soal 6](images/6-2.png)
 
 # Soal 7
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
