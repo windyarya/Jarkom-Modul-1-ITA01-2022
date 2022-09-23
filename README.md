@@ -70,10 +70,13 @@ Dalam soal 3 ini, kita diminta untuk menampilkan seluruh paket yang menuju port 
 
 Untuk mengerjakan soal 3 ini, kita akan menggunakan syntax tcp.dstport dan udp.dstport. Dengan tcp.dstport == 80 || udp.dstport == 80, kita dapat menyaring seluruh paket TCP yang menuju port (dstport) 80 dan paket UDP yang menuju port (dstport) 80.
 
-
 ## Kendala
 
 Tidak ada kendala yang dialami.
+
+## Dokumentasi Soal 3
+- Hasil Filter soal 3 <br>
+![Hasil Filter soal 3](img/3.png)
 
 # Soal 4
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ```port 21```.
@@ -92,6 +95,10 @@ Untuk mengerjakan soal 4 ini, kita akan melakukan hal yang mirip dengan soal 3 y
 
 Tidak ada kendala yang dialami.
 
+## Dokumentasi Soal 4
+- Hasil Filter soal 4 <br>
+![Hasil Filter soal 4](img/4.png)
+
 # Soal 5
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ```port 443```.
 
@@ -107,6 +114,10 @@ Dalam soal 5, kita akan melakukan hal yang sama dengan soal 4 yakni dengan mengg
 
 Tidak ada kendala yang dialami.
 
+## Dokumentasi Soal 5
+- Hasil Filter soal 5 <br>
+![Hasil Filter soal 5](img/5.png)
+
 # Soal 6
 Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
 
@@ -119,14 +130,18 @@ Dalam soal 6, kita diminta untuk menampilkan seluruh paket yang menuju ```lipi.g
 
 Untuk mengerjakan soal 6 ini, kita akan mencari ip website lipi.go.id dengan perintah ping pada cmd/terminal.
 
--–Gambar 6.1—
-
 Kemudian kita dapat melakukan filter dengan syntax ip.dst dan mencari ip destinasi yang sama sesuai hasil IP yang didapat dari ping sebelumnya yakni ```ip.dst == 203.160.128.158``` dan dari deskripsi Request ``GET``` dapat dilihat tertulis “FULL REQUEST URI: http://lipi.go.id”. Berikut ini hasil screenshot dari paket yang menuju ke lipi.go.id.
 
-—Gambar 6.2—
 ## Kendala
 
 Tidak ada kendala yang dialami.
+
+## Dokumentasi Soal 6
+- Hasil ping lipi.go.id <br>
+![Hasil ping lipi.go.id](img/6-1.png)
+
+- Hasil Filter soal 6 <br>
+![Hasil Filter soal 6](img/6-2.png)
 
 # Soal 7
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
