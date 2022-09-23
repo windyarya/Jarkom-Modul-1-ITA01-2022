@@ -22,17 +22,17 @@ Penjelasan dan penyelesaian Soal Shift 2 Jaringan Komputer 2021 Kelompok ITA01
 
 # Soal 1
 
-Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!
+Sebutkan web server yang digunakan pada `monta.if.its.ac.id`!
 
 ## Analisa Soal
 
-Pada soal 1 ini, kita diminta untuk mencari web server yang digunakan oleh host monta.if.its.ac.id.
+Pada soal 1 ini, kita diminta untuk mencari web server yang digunakan oleh host `monta.if.its.ac.id`.
 
 ## Cara Pengerjaan
 
-Dengan menggunakan Display Filter http, maka kita dapat menyaring seluruh paket yang terkoneksi dengan HTTP, salah satunya yakni website monta.if.its.ac.id. Hal ini dapat kita cek dengan melakukan ping monta.if.its.ac.id dan kedua nya menunjukkan IP Address yang sama yakni 103.94.189.5.
+Dengan menggunakan Display Filter http, maka kita dapat menyaring seluruh paket yang terkoneksi dengan HTTP, salah satunya yakni website `monta.if.its.ac.id`. Hal ini dapat kita cek dengan melakukan ping `monta.if.its.ac.id` dan kedua nya menunjukkan IP Address yang sama yakni `103.94.189.5`.
 
-Dengan melihat isi dari salah satu response dari host 103.94.189.5, maka terlihat bahwa server yang digunakan adalah `nginx/1.10.3`.
+Dengan melihat isi dari salah satu response dari host `103.94.189.5`, maka terlihat bahwa server yang digunakan adalah `nginx/1.10.3`.
 
 ## Kendala
 
