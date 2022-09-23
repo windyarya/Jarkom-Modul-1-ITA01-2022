@@ -31,14 +31,22 @@ Pada soal 1 ini, kita diminta untuk mencari web server yang digunakan oleh host 
 ## Cara Pengerjaan
 
 Dengan menggunakan Display Filter http, maka kita dapat menyaring seluruh paket yang terkoneksi dengan HTTP, salah satunya yakni website monta.if.its.ac.id. Hal ini dapat kita cek dengan melakukan ping monta.if.its.ac.id dan kedua nya menunjukkan IP Address yang sama yakni 103.94.189.5.
-![Gambar no 1.1]()
-![Gambar no 1.2]()
-Dengan melihat isi dari salah satu response dari host 103.94.189.5, maka terlihat bahwa server yang digunakan adalah nginx/1.10.3. Berikut adalah screenshotnya.
-![Gambar no 1.3]()
+
+Dengan melihat isi dari salah satu response dari host 103.94.189.5, maka terlihat bahwa server yang digunakan adalah `nginx/1.10.3`.
 
 ## Kendala
 
 Tidak ada kendala
+
+## Dokumentasi Soal 1
+- Hasil display filter `http`  <br>
+![Hasil Display Filter http](images/1-1.png)
+
+- Hasil ping web Monta  <br>
+![Hasil Ping Web Monta](images/1-2.png)
+
+- Hasil response dari web Monta  <br>
+![Hasil Filter soal 3](images/1-3.png)
 
 # Soal 2
 
@@ -50,14 +58,21 @@ Pada soal 2 ini, kita diminta untuk mencari request dan response yang mengarah k
 
 ## Cara Pengerjaan
 
-Dengan display filter http, command *http.request.uri contains “detail”* kita mendapatkan packet request ke website monta yaitu ke path `index.php/topik/detailTopik/194` sebagai berikut.
-![Gambar no 2.1]()
-Dengan mengetahui packet requestnya di packet 576, kita bisa mencari request dan response nya dengan command display filter berikut *http.request.uri contains "detail" or http.request_in eq 576*. Kemudian, pada request kita cari judulnya dan mendapatkan topik TA yaitu “Evaluasi unjuk kerja User Space Filesystem FUSE”.
-![Gambar no 2.2]()
+Dengan display filter http, command `http.request.uri contains "detail"` kita mendapatkan packet request ke website monta yaitu ke path `index.php/topik/detailTopik/194` sebagai berikut.
+
+Dengan mengetahui packet requestnya di packet 576, kita bisa mencari request dan response nya dengan command display filter berikut `http.request.uri contains "detail" or http.request_in eq 576`. Kemudian, pada request kita cari judulnya dan mendapatkan topik TA yaitu “Evaluasi unjuk kerja User Space Filesystem FUSE”.
 
 ## Kendala
 
 Tidak ada kendala
+
+## Dokumentasi Soal 2
+- Hasil display dilter `http.request.uri contains "detail"`  <br>
+![Hasil Display Filter](images/2-1.png)
+
+- Hasil display filter `http.request.uri contains "detail" or http.request_in eq 576`  <br>
+![Hasil Ping Web Monta](images/2-2.png)
+
 
 # Soal 3
 Filter sehingga wireshark hanya menampilkan paket yang menuju ```port 80```.
@@ -153,14 +168,21 @@ Pada soal ini, kita diminta untuk melakukan filter sehingga yang tampil hanyalah
 ## Cara pengerjaan
 
 Pertama kita dapat mengetahui ip address melalui cmd/terminal dengan syntax `ipconfig (cmd)` atau `ifconfig -a (terminal)` disini terlihat ip kami pada bagian IPv4 Address.
-![Gambar 7.1]()
+
 Lalu saat mendapatkan IP-nya, kita melakukan filter package dengan syntax `ip.src == 192.168.1.7` agar dapat terlihat paket yang berasal dari kita.
-![Gambar 7.2]()
+
 
 ## Kendala
 Tidak ada kendala
 
-###Untuk soal 8-10, silahkan baca cerita di bawah ini!
+## Dokumentasi Soal 6
+- Hasil cek IP Address <br>
+![Hasil cek IP](images/7-1.png)
+
+- Hasil Filter soal 7 <br>
+![Hasil Filter soal 7](images/7-2.png)
+
+# Untuk soal 8-10, silahkan baca cerita di bawah ini!
 
 Di sebuah planet bernama Viltrumite, terdapat Kementerian Komunikasi dan Informatika yang baru saja menetapkan kebijakan baru. Dalam kebijakan baru tersebut, pemerintah dapat mengakses data pribadi masyarakat secara bebas jika memang dibutuhkan, baik dengan maupun tanpa persetujuan pihak yang bersangkutan. Sebagai mahasiswa yang sedang melaksanakan program magang di kementerian tersebut, kalian mendapat tugas berupa penyadapan percakapan mahasiswa yang diduga melakukan tindak kecurangan dalam kegiatan Praktikum Komunikasi Data dan Jaringan Komputer 2022. Selain itu, terdapat sebuah password rahasia (flag) yang diduga merupakan milik sebuah organisasi bawah tanah yang selama ini tidak sejalan dengan pemerintahan Planet Viltrumite. Tunggu apa lagi, segera kerjakan tugas magang tersebut agar kalian bisa mendapatkan pujian serta kenaikan jabatan di kementerian tersebut!
 
