@@ -1,6 +1,6 @@
 # soal-shift-jarkom-1-ITA01-2022
 
-Penjelasan dan penyelesaian Soal Shift 1 Jaringan Komputer 2021 Kelompok ITA01
+Penjelasan dan penyelesaian Soal Shift 1 Jaringan Komputer 2022 Kelompok ITA01
 
 1. Damarhafni Rahmannabel Nadim P (5027201026)
 2. Salman Al Farisi Sudirlan (5027201056)
